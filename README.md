@@ -1,16 +1,68 @@
+# Rock Paper Scissors Game
+
+A simple web-based implementation of the classic Rock Paper Scissors game where players compete against the computer.
+
+## Features
+
+- Interactive web interface
+- Real-time score tracking
+- Immediate feedback on game results
+- Responsive design for all devices
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+
+## Setup and Installation
+
+1. Clone the repository:
+```bash
+git clone git@github.com:stevensuna/rps-game.git
+```
+
+2. Open `index.html` in your web browser
+3. Start playing!
+
+## How to Play
+
+1. Click on one of three buttons: Rock, Paper, or Scissors
+2. The computer will make its choice randomly
+3. The winner is determined by these rules:
+   - Rock beats Scissors
+   - Scissors beats Paper
+   - Paper beats Rock
+4. Score is tracked: +1 for wins, -1 for losses
+
 ## JavaScript Concepts Used
 
-This project allowed me to practice several key JavaScript concepts:
+This project demonstrates several key JavaScript concepts:
 
-* **Variables:** I used variables to store the player's choice, the computer's choice, and the result of the game.
-* **Functions:** Functions were essential for organizing the code and making it reusable. I created functions to:
-    * Generate the computer's choice randomly.
-    * Determine the winner of the game based on the player's and computer's choices.
-    * Play a single round of the game.
-    * Display the results in the console.
-* **Control Flow:** I used `if/else if/else` statements to determine the winner of each round based on the different combinations of choices (rock, paper, or scissors).
-* **Loops:** While loops were used to allow the player to play multiple rounds of the game until they decide to stop.
-* **Input/Output:**  `prompt()` was used to get the player's choice, and `console.log()` was used to display the results and messages to the player in the console. 
-* **Random Number Generation:** `Math.random()` was used to generate a random number for the computer's choice.
+* **DOM Manipulation:** Event listeners and dynamic content updates
+* **Variables:** Storing game state, choices, and scores
+* **Functions:** Modular code organization for game logic
+* **Conditionals:** Game rules implementation
+* **Objects:** Storing win conditions and messages
+* **Event Handling:** Processing player interactions
+* **Template Literals:** Dynamic message generation
+* **Array Methods:** Managing game choices
+* **Random Number Generation:** Computer choice selection
 
-This project helped me solidify my understanding of these fundamental JavaScript concepts and apply them in a practical and fun way.
+## File Structure
+
+```
+rock-paper-scissors/
+├── index.html
+├── styles.css
+├── script.js
+└── README.md
+```
+
+## Contributing
+
+Feel free to submit issues and enhancement requests.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
