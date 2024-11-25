@@ -50,6 +50,20 @@ document.addEventListener('DOMContentLoaded', () => {
         if (result === 'win') score++;      // Thắng +1 điểm / Win +1 point
         if (result === 'lose') score--;     // Thua -1 điểm / Lose -1 point
         scoreDisplay.textContent = score;    // Hiển thị điểm mới / Display new score
+        
+        // Check for winner
+        if (score >= 5) {
+            resultDisplay.textContent = "Game Over - You are the winner!";
+            disableButtons();
+        } else if (score <= -5) {
+            resultDisplay.textContent = "Game Over - Computer is the winner!";
+            disableButtons();
+        }
+    }
+
+    // Add this new function to disable buttons after game end
+    function disableButtons() {
+        buttons.forEach(button => button.disabled = true);
     }
 
     // Hàm xử lý một lượt chơi
